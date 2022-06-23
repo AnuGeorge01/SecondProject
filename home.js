@@ -9,5 +9,5 @@ function loadCoupon(){
 
 function closeCoupon(){
     document.getElementById('coupon').style.visibility = 'hidden'
-    coupon.remove();
+    
 }
