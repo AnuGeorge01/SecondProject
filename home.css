@@ -6,6 +6,20 @@ body{
     background-color:black;
     color:white
 }
+#geolocation{
+    position:absolute;
+    left: 21px;
+    top: 7px;
+    z-index:3;
+    height: 90px;
+    width: 190px;
+    box-sizing: border-box;
+}
+#geolocation button{
+    color:white;
+    border:none;
+    background-color:#2874f0;
+}
 .coupon-section{
     background-color: white;
 }
@@ -96,6 +110,7 @@ header {
 
 /*quickheader*/
 #quickheader {
+    margin-top:23px;
     height: 200px;
     width: 100%;
     
