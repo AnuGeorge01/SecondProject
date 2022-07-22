@@ -20,8 +20,12 @@
                         <div id="searchbar">
                             <form>
                                 <div class="mb-3">
-                                <input type="text" placeholder="Search for products, brands and more" class="form-control" id="products">
-                                </div>
+                                    <div class="dropdown form-control"  id="products">
+                                        <select id="city" onChange="getCity()">
+                                            <option>Search for products, brands and more</option>
+                                        </select>
+                                    </div>
+                                </div>                               
                             </form>   
                             <button type="button" class="btn"><i class="fa-solid fa-magnifying-glass lens" id="button"></i></button>   
                         </div> 
@@ -93,29 +97,27 @@
                 <div class="row">
                     <div class="col" >
                         <img src="images/mobile.jfif" alt="Mobile" class="fo" />
-                        <p><a href="#">Mobile</a></p>
-
+                        <p>Mobile</p>
                     </div>
                     <div class="col-lg-2">
-                        <img src="images/women.jfif" alt="women" class="fo" />
-                        <p><a href="#">Women</a></p>
+                        <img src="images/women.jfif" alt="Fashion" class="fo" />
+                        <p>Fashion</p>
                     </div>
                     <div class="col-lg-2">
-                        <img src="images/kids.jfif" alt="kids" class="fo" />
-                        <p><a href="#">Kids</a></p>
+                        <img src="images/images.jfif" alt="Electronics" class="fo" />
+                        <p>Electronics</p>
                     </div>
                     <div class="col-lg-2">
-                        <img src="images/beauty.jfif" alt="beauty" class="fo" />
-                        <p><a href="#">Beauty </a></p>
+                        <img src="images/beauty.jfif" alt="Beauty" class="fo" />
+                        <p>Beauty</p>
                     </div>
                     <div class="col-lg-2">
                         <img src="images/grocery.jfif" alt="grocery" class="fo" />
-                        <p><a href="#">Grocery </a></p>
+                        <p>Grocery</p>
                     </div>
                     <div class="col-lg-2">
                         <img src="images/travel.jfif" alt="travel" class="fo" />
-                        <p><a href="#">Travel</a></p>
-                    </div>
+                        <p>Travel</p>
                 </div>
             </div>
             <hr/>
@@ -191,5 +193,8 @@
         <footer>
             <p> &copy Flipkart</p>
         </footer>
+        <script>
+            window.onload = getCity()
+        </script>
     </body>
 </html>
